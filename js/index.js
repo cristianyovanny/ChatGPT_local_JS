@@ -21,9 +21,10 @@ if (window.Worker) { // Web Workers check
     }
 }
 
+const SELECT_MODEL = 'Llama-3-8B-Instruct-q4f16_1-MLC'
 //const SELECT_MODEL = 'Phi-3-mini-4k-instruct-q4f16_1-MLC-1k'
 //const SELECT_MODEL = 'gemma-2b-it-q4f32_1-MLC'
-const SELECT_MODEL = 'TinyLlama-1.1B-Chat-v1.0-q4f16_1-MLC'
+//const SELECT_MODEL = 'TinyLlama-1.1B-Chat-v1.0-q4f16_1-MLC'
 
 const engine = await CreateWebWorkerMLCEngine(
     new Worker('js/worker.js', { type: 'module'}), 
