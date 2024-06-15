@@ -20,6 +20,7 @@ main {
     margin-bottom: 16px;
 
     overflow-y: auto;
+    scroll-behavior: smooth;
 }
 
 ul {
@@ -90,7 +91,59 @@ button {
     cursor: pointer;
     transition: background 0.3s ease;
 
+    &[disabled] {
+        background: #ccc;
+        opacity: 0.6;
+    }
     &:hover {
         background: #0056b3;
     }
 }
+small {
+    font-size: 10px;
+    color: #555;
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 400px;
+}
+/* .loading {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50%;
+
+    i {
+      pointer-events: none;
+      width: 2.5em;
+      height: 2.5em;
+      border: 0.4em solid transparent;
+      border-color: #eee;
+      border-top-color: #3E67EC;
+      border-radius: 50%;
+      animation: loadingspin 1s linear infinite;
+    }
+
+    h4 {
+      color: #444;
+      margin-bottom: 8px;
+    }
+
+    h5 {
+      font-weight: 400;
+      margin: 0;
+      font-size: 10px;
+      opacity: .4;
+    }
+}
+
+@keyframes loadingspin {
+    100% {
+      transform: rotate(360deg)
+    }
+} */
