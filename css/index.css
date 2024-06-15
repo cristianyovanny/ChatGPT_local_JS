@@ -7,6 +7,10 @@ body {
 
 }
 
+h1 {
+    font-size: 1em;
+}
+
 main {
     width: 400px;
     max-width: 100%;
